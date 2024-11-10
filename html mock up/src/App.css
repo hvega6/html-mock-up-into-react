@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html {
+  border-left: 5px solid lightgray; /* Border on the left side */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  min-height: 100vh; /* Set min-height to 100% of viewport height */
+  font-family: sans-serif; /* Use sans-serif fonts */
+  max-width: 1000px; /* Max width of body */
+  margin: auto; /* Center body */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header, main, footer {
+  padding: 1rem 2rem; /* Padding to fix margin-collapse */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  color: tomato; /* Color for h1 */
+  font-size: 3rem; /* Increased font size */
+  font-weight: lighter; /* Lighter font weight */
 }
 
-.card {
-  padding: 2em;
+img {
+  width: 100%; /* Set all images to have a width of 100% */
 }
 
-.read-the-docs {
-  color: #888;
+nav ul {
+  padding: 0; /* Remove padding from ul */
+  list-style-type: none; /* Set list-style-type to none */
+  display: flex; /* Use Flexbox for navigation */
+  justify-content: space-between; /* Spread items evenly */
+}
+
+nav ul a {
+  color: lightgray; /* Color for main navigation anchors */
+}
+
+footer nav ul a {
+  color: red; /* Color for footer navigation anchors */
+}
+
+article h3 {
+  font-size: 2rem; /* Style for blog post titles */
+  font-weight: lighter; /* Lighter font weight */
+}
+
+article p:first-letter {
+  font-size: 5rem; /* Adjust size for the drop cap */
+  color: lightgray; /* Color for the drop cap */
+}
+
+article {
+  margin-bottom: 4rem; /* Margin on the bottom of article */
+  border-bottom: 1px solid lightgray; /* 1px solid border at the bottom */
+  padding-bottom: 2rem; /* Padding at the bottom of article */
+}
+
+footer p {
+  color: lightgray; /* Color for copyright text */
+}
+
+article p a {
+  color: red; /* Color for 'continues...' anchor */
+  float: right; /* Align to the right */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make it bold */
+}
+
+date {
+  font-size: 1.8rem; /* Font size for date */
+  padding-bottom: -20%; /* This may not work as intended */
+  color: lightgray; /* Color for date */
+  font-weight: lighter; /* Lighter font weight */
+}
+
+h2 {
+  font-weight: lighter; /* Lighter font weight for h2 */
+  font-size: 1.3rem; /* Font size for h2 */
 }
